@@ -9,6 +9,7 @@
 
         console.log(task);
 
+        addTask(task);
         form.reset();
     };
 
@@ -29,5 +30,7 @@
         const taskDom = document.createElement('li');
 
         taskDom.innerHTML = getUpdatedTemplate(task);
+
+        tasksDom.prepend(taskDom);
     };
 }
